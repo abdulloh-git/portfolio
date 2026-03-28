@@ -1,0 +1,58 @@
+@import url(./NavbarMedia.scss);
+
+.header {
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    width: 100%;
+    animation: slideIn 0.8s ease-out forwards;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.header__nav-list_item-link {
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.header__nav-list_item-link:hover {
+    color: var(--primary-color);
+}
+
+.header__nav-list_item-link::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: var(--primary-color);
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.header__nav-list_item-link:hover::after {
+    opacity: 1;
+}
+
+.header__nav-btn {
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background: transparent;
+    padding: 7px 13px;
+    border-radius: 4px;
+    font-weight: 800;
+}

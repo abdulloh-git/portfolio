@@ -1,0 +1,64 @@
+import { useTranslation } from "react-i18next";
+import "./Projects.scss";
+
+const Projects = () => {
+  const { t } = useTranslation();
+  return (
+    <div className="projects">
+      <h1 className="projects__h1">{t("myProjects")}</h1>
+      <div className="container projects__grid">
+
+        <div className="projects__block">
+          <div className="projects__block-img">
+            <img src="https://images.unsplash.com/photo-1557683316-973673baf926" alt="" />
+          </div>
+          <div className="projects__block-desc">
+            <div className="projects__block-desc_text">
+              <h3 className="projects__block-desc_text-h3">{t("ticketSelling")}</h3>
+              <p className="projects__block-desc_text-p">{t("madeWith1")}</p>
+            </div>
+            <div className="projects__block-btns">
+              <a href="https://t.me/..." className="projects__block-btns_link">{t("telegram")}</a>
+              <a href="https://abdulloh-git.github.io/..." className="projects__block-btns_link">{t("github")}</a>
+            </div>
+          </div>
+        </div>
+
+        <div className="projects__block">
+          <div className="projects__block-img">
+            <img src="https://images.unsplash.com/photo-1540350394557-8d14678e7f91" alt="" />
+          </div>
+          <div className="projects__block-desc">
+            <div className="projects__block-desc_text">
+              <h3 className="projects__block-desc_text-h3">{t("todo")}</h3>
+              <p className="projects__block-desc_text-p">{t("madeWith2")}</p>
+            </div>
+            <div className="projects__block-btns">
+              <a href="#" className="projects__block-btns_link">{t("telegram")}</a>
+              <a href="#" className="projects__block-btns_link">{t("github")}</a>
+            </div>
+          </div>
+        </div>
+
+        <div className="projects__block">
+          <div className="projects__block-img">
+            <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b" alt="" />
+          </div>
+          <div className="projects__block-desc">
+            <div className="projects__block-desc_text">
+              <h3 className="projects__block-desc_text-h3">{t("forecasting")}</h3>
+              <p className="projects__block-desc_text-p">{t("madeWith3")}</p>
+            </div>
+            <div className="projects__block-btns">
+              <a href="#" className="projects__block-btns_link">{t("telegram")}</a>
+              <a href="#" className="projects__block-btns_link">{t("github")}</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
+};
+
+export default Projects;

@@ -1,0 +1,19 @@
+@media screen and (max-width:1080px) {
+    .Home__wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .Home__desc {
+        text-align: center;
+        &-btns {
+            justify-content: center;
+        }
+    }
+
+    .Home__img img {
+        width: 100%;    
+        transform: translateX(-10px);
+    }
+}

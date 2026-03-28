@@ -1,0 +1,13 @@
+@media screen and (max-width:768px) {
+    .skills {
+        &__grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+
+            &:nth-child(1) {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+    }
+}
