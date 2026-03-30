@@ -161,10 +161,10 @@
     }
 }
 
-.contact-submit-btn {
+.contact__submit-btn {
     width: 100%;
     padding: 16px;
-    background: #3b82f6; // Тот же синий цвет, что и у иконок
+    background: #3b82f6;
     color: #fff;
     border: none;
     border-radius: 12px;
@@ -175,7 +175,7 @@
     margin-top: 10px;
 
     &:hover {
-        background: #2563eb; // Чуть более темный синий при наведении
+        background: #2563eb; 
         transform: translateY(-2px);
     }
 
@@ -206,7 +206,7 @@
         color: #fff;
     }
 
-    .contact-submit-btn:hover:not(:disabled) {
+    .contact__submit-btn:hover:not(:disabled) {
         background: #2563eb;
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
@@ -227,7 +227,7 @@
         opacity: 0.6;
     }
 
-    .contact-submit-btn:active:not(:disabled) {
+    .contact__submit-btn:active:not(:disabled) {
         background: #2563eb;
         transform: scale(0.96); 
         opacity: 0.9;
