@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { useTypewriter } from '../../animation/Typewriter';
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm("xqegkeaj");
+  const [state, handleSubmit, reset] = useForm("xqegkeaj");
   const { t } = useTranslation();
   const lets = useTypewriter(t("lets"));
   return (
@@ -38,7 +38,7 @@ const Contact = () => {
             <div className="contact__success-icon">✔️</div>
             <h3 className="contact__success-h3">{t("messageStatus")}</h3>
             <p className="contact__success-p">{t("thanks")}</p>
-            <button onClick={() => window.location.reload()} className="contact__success-btn">
+            <button onClick={ reset } className="contact__success-btn">
               {t("another")}
             </button>
           </div>
@@ -89,6 +89,7 @@ const Contact = () => {
               type="submit"
               disabled={state.submitting}
               className="contact__success-btn"
+              onClick={reset}
             >
               {state.submitting ? t("sending") : t("send")}
             </button>
