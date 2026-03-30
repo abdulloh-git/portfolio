@@ -88,7 +88,7 @@ const Contact = () => {
             <button
               type="submit"
               disabled={state.submitting}
-              className="contact__success-btn"
+              className="contact__submit-btn"
             >
               {state.submitting ? t("sending") : t("send")}
             </button>

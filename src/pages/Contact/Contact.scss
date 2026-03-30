@@ -161,6 +161,36 @@
     }
 }
 
+.contact-submit-btn {
+    width: 100%;
+    padding: 16px;
+    background: #3b82f6; // Тот же синий цвет, что и у иконок
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+
+    &:hover {
+        background: #2563eb; // Чуть более темный синий при наведении
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+
+    &:disabled {
+        background: #1e3a8a;
+        color: #94a3b8;
+        cursor: not-allowed;
+        transform: none;
+    }
+}
+
 @media (hover: hover) {
     .contact__text-links_blocks:hover .contact__text-links_blocks-img {
         background: #3b82f6;
@@ -176,7 +206,13 @@
         color: #fff;
     }
 
-    .input-group input:hover, 
+    .contact-submit-btn:hover:not(:disabled) {
+        background: #2563eb;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    }
+
+    .input-group input:hover,
     .input-group textarea:hover {
         border-color: rgba(59, 130, 246, 0.5);
     }
@@ -186,13 +222,19 @@
     .contact__text-links_blocks:active {
         opacity: 0.7;
     }
-    
+
     .contact__success-btn:active {
         opacity: 0.6;
     }
+
+    .contact-submit-btn:active:not(:disabled) {
+        background: #2563eb;
+        transform: scale(0.96); 
+        opacity: 0.9;
+    }
 }
 
-.input-group input:focus, 
+.input-group input:focus,
 .input-group textarea:focus {
     border-color: #3b82f6;
     box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
