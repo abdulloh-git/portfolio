@@ -38,7 +38,7 @@ const Contact = () => {
             <div className="contact__success-icon">✔️</div>
             <h3 className="contact__success-h3">{t("messageStatus")}</h3>
             <p className="contact__success-p">{t("thanks")}</p>
-            <button onClick={ reset } className="contact__success-btn">
+            <button onClick={ reset } className="contact__success-btn" type='button'>
               {t("another")}
             </button>
           </div>
