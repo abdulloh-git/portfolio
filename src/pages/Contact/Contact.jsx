@@ -2,15 +2,17 @@ import React from 'react';
 import "./Contact.scss";
 import { useForm, ValidationError } from '@formspree/react';
 import { useTranslation } from 'react-i18next';
+import { useTypewriter } from '../../animation/Typewriter';
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("xqegkeaj");
   const { t } = useTranslation();
+  const lets = useTypewriter(t("lets"));
   return (
     <div className="contact">
       <div className="contact__text">
         <div className="contact__text-desc">
-          <h2 className="contact__text-desc_h2">{t("lets")}</h2>
+          <h2 className="contact__text-desc_h2">{lets}</h2>
           <p className="contact__text-desc_p">{t("available")}</p>
         </div>
         <div className="contact__text-links">

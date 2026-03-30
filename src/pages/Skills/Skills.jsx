@@ -1,11 +1,13 @@
 import { useTranslation } from "react-i18next"
 import "./Skills.scss"
+import { useTypewriter } from "../../animation/Typewriter";
 
 const Skills = () => {
   const { t } = useTranslation();
+  const myStack = useTypewriter(t("myStack"), 150);
   return (
     <div className="skills">
-      <h2 className="skills__h1">{t("myStack")}</h2>
+      <h2 className="skills__h1">{myStack}</h2>
       <div className="container skills__grid">
         <div className="skills__block">
           <h3 className="skills__block-h3">{t("Logic")}</h3>

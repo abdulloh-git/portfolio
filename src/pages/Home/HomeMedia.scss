@@ -7,13 +7,13 @@
 
     .Home__desc {
         text-align: center;
+
         &-btns {
             justify-content: center;
         }
     }
 
     .Home__img img {
-        width: 100%;    
-        transform: translateX(-10px);
+        width: 100%;
     }
 }
