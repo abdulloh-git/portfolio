@@ -89,7 +89,6 @@ const Contact = () => {
               type="submit"
               disabled={state.submitting}
               className="contact__success-btn"
-              onClick={reset}
             >
               {state.submitting ? t("sending") : t("send")}
             </button>
