@@ -10,7 +10,7 @@ const Skills = () => {
       <h2 className="skills__h1">{myStack}</h2>
       <div className="container skills__grid">
         <div className="skills__block">
-          <h3 className="skills__block-h3">{t("Logic")}</h3>
+          <h3 className="skills__block-h3 special">{t("Logic")}</h3>
           <div className="skills__block-components">
             <span className="skills__block-components-span">{t("RTK")}</span>
             <span className="skills__block-components-span">{t("zustand")}</span>
@@ -21,7 +21,7 @@ const Skills = () => {
           <p className="skills__block-p">{t("logicText")}</p>
         </div>
         <div className="skills__block">
-          <h3 className="skills__block-h3">{t("core")}</h3>
+          <h3 className="skills__block-h3">{t("lang")}</h3>
           <div className="skills__block-components">
             <span className="skills__block-components-span">{t("ts")}</span>
             <span className="skills__block-components-span">{t("js")}</span>
@@ -42,16 +42,16 @@ const Skills = () => {
           </div>
         </div>
         <div className="skills__block">
-          <h3 className="skills__block-h3">{t("workflow")}</h3>
+          <h3 className="skills__block-h3">{t("tools")}</h3>
           <div className="skills__block-components">
             <span className="skills__block-components-span">{t("git")}</span>
             <span className="skills__block-components-span">{t("vite")}</span>
           </div>
         </div>
         <div className="skills__block">
-          <h3 className="skills__block-h3">{t("tools")}</h3>
+          <h3 className="skills__block-h3">{t("workflow")}</h3>
           <div className="skills__block-components">
-            <span className="skills__block-components-span">{t("figma")}</span>
+            <span className="skills__block-components-span">{t("node")}</span>
             <span className="skills__block-components-span">{t("npm")}</span>
           </div>
         </div>

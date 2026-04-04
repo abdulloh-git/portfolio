@@ -3,15 +3,15 @@
     padding: 56px;
     border-radius: 32px;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    display: flex;
-    justify-content: space-between;
-    gap: 64px;
-    animation: slideIn 0.8s ease-out forwards;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 64px;
 
-    @media screen and (max-width: 991px) {
-        flex-direction: column;
+        @media screen and (max-width: 991px) {
+            flex-direction: column;
+        }
     }
-
 
     &__text {
         flex: 1;
